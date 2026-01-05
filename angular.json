@@ -50,7 +50,7 @@
               "sourceMap": true
             },
             "github-pages": {
-              "baseHref": "/",
+              "baseHref": "/kidscare/",
               "outputHashing": "all",
               "budgets": [
                 {
