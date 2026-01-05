@@ -1,0 +1,30 @@
+<section class="care-tips" id="care">
+  <div class="container">
+    <div class="section-header">
+      <h2>Essential Care Tips for Parents</h2>
+      <p class="section-subtitle">
+        Practical guidelines to help you manage your child's gaming activities safely 
+        while promoting healthy development and digital wellness.
+      </p>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card" *ngFor="let tip of careTips">
+        <div class="tip-icon">{{ tip.icon }}</div>
+        <div class="tip-content">
+          <h3>{{ tip.title }}</h3>
+          <p>{{ tip.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="care-reminder">
+      <div class="reminder-content">
+        <h3>Remember</h3>
+        <p>
+          Gaming can be a positive and educational experience when approached thoughtfully. 
+          The key is moderation, supervision, and ensuring games complement rather than 
+          replace other important childhood activities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

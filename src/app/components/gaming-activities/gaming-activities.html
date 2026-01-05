@@ -1,0 +1,23 @@
+<section class="gaming-activities" id="activities">
+  <div class="container">
+    <div class="section-header">
+      <h2>Fun Gaming Activities for Kids</h2>
+      <p class="section-subtitle">
+        Discover a variety of engaging and educational gaming activities designed to 
+        entertain while promoting healthy development and learning.
+      </p>
+    </div>
+    <div class="activities-grid">
+      <div class="activity-card" *ngFor="let activity of activities">
+        <div class="activity-icon">{{ activity.icon }}</div>
+        <h3>{{ activity.title }}</h3>
+        <p>{{ activity.description }}</p>
+        <div class="benefits-list">
+          <span class="benefit-tag" *ngFor="let benefit of activity.benefits">
+            {{ benefit }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
