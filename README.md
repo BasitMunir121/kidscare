@@ -98,3 +98,4 @@ The site will be automatically deployed on every push to the main branch.
 ## License
 
 This project is open source and available for educational purposes.
+# kidscare
