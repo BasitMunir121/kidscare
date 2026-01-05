@@ -4,6 +4,8 @@ import { HeaderComponent } from './components/header/header';
 import { HeroComponent } from './components/hero/hero';
 import { GamingActivitiesComponent } from './components/gaming-activities/gaming-activities';
 import { CareTipsComponent } from './components/care-tips/care-tips';
+import { GalleryComponent } from './components/gallery/gallery';
+import { AboutComponent } from './components/about/about';
 import { FooterComponent } from './components/footer/footer';
 
 @Component({
@@ -14,6 +16,8 @@ import { FooterComponent } from './components/footer/footer';
     HeroComponent,
     GamingActivitiesComponent,
     CareTipsComponent,
+    GalleryComponent,
+    AboutComponent,
     FooterComponent
   ],
   templateUrl: './app.html',

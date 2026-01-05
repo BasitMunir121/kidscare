@@ -1,0 +1,41 @@
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <h2 class="fade-in">Image Gallery</h2>
+      <p class="fade-in-delay">
+        Explore our collection of gaming activities and see children learning, 
+        playing, and having fun in safe, educational environments.
+      </p>
+    </div>
+
+    <div class="filter-buttons">
+      <button
+        *ngFor="let category of categories"
+        [class.active]="selectedCategory === category"
+        (click)="selectCategory(category)"
+        class="filter-btn"
+      >
+        {{ category }}
+      </button>
+    </div>
+
+    <div class="gallery-grid">
+      <div
+        class="gallery-item"
+        *ngFor="let image of filteredImages; let i = index"
+        [style.animation-delay]="(i * 0.1) + 's'"
+      >
+        <div class="image-container">
+          <img [src]="image.image" [alt]="image.title" loading="lazy" />
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <h3>{{ image.title }}</h3>
+              <p>{{ image.description }}</p>
+              <span class="category-badge">{{ image.category }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,79 @@
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-header">
+      <h2 class="fade-in">About KidsCare</h2>
+      <p class="fade-in-delay">
+        We are committed to providing safe, educational, and engaging gaming experiences 
+        for children while empowering parents with the knowledge and tools they need 
+        to ensure healthy digital habits.
+      </p>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat-card" *ngFor="let stat of stats; let i = index" [style.animation-delay]="(i * 0.1) + 's'">
+        <div class="stat-number">{{ stat.number }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    </div>
+
+    <div class="mission-section">
+      <div class="mission-content">
+        <div class="mission-text slide-in-left">
+          <h3>Our Mission</h3>
+          <p>
+            To bridge the gap between fun and learning by curating the best educational 
+            gaming activities for children while promoting digital wellness and safe 
+            screen time practices.
+          </p>
+          <p>
+            We believe that gaming can be a powerful tool for education when used 
+            appropriately, and we're here to guide parents through this digital journey.
+          </p>
+        </div>
+        <div class="mission-image slide-in-right">
+          <div class="image-placeholder">
+            <span class="emoji-large">🌟</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-section">
+      <h3 class="section-title fade-in">Our Team</h3>
+      <div class="team-grid">
+        <div class="team-card" *ngFor="let member of team; let i = index" [style.animation-delay]="(i * 0.2) + 's'">
+          <div class="team-icon">{{ member.icon }}</div>
+          <h4>{{ member.name }}</h4>
+          <p class="team-role">{{ member.role }}</p>
+          <p class="team-description">{{ member.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="values-section">
+      <h3 class="section-title fade-in">Our Values</h3>
+      <div class="values-grid">
+        <div class="value-item bounce-in">
+          <div class="value-icon">🎯</div>
+          <h4>Safety First</h4>
+          <p>Children's safety and wellbeing are our top priorities</p>
+        </div>
+        <div class="value-item bounce-in" style="animation-delay: 0.1s">
+          <div class="value-icon">📚</div>
+          <h4>Education</h4>
+          <p>Promoting learning through interactive experiences</p>
+        </div>
+        <div class="value-item bounce-in" style="animation-delay: 0.2s">
+          <div class="value-icon">❤️</div>
+          <h4>Care</h4>
+          <p>Supporting parents with expert guidance and resources</p>
+        </div>
+        <div class="value-item bounce-in" style="animation-delay: 0.3s">
+          <div class="value-icon">✨</div>
+          <h4>Innovation</h4>
+          <p>Continuously improving and updating our content</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
